@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+	int a[10];
+	int size, i, j, c;
+	scanf("%d", &size);
+	for(i = 0; i < size; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	for(i=0; i< size; i++)
+	{
+		c=0;
+		for(j=0; j<size; j++)
+		{
+			if(a[j] == a[i])
+			    c++;
+		}
+		if(c==1)
+		    printf("%d ", a[i]);
+	}
+}
